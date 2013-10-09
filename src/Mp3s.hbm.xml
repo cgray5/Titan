@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 28, 2013 11:42:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="titanmusicplayer.entity.Mp3s" table="mp3s" catalog="titanmusic">
+        <id name="mp3id" type="int">
+            <column name="Mp3ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="45" />
+        </property>
+        <property name="artist" type="string">
+            <column name="artist" length="45" />
+        </property>
+        <property name="album" type="string">
+            <column name="album" length="45" />
+        </property>
+        <property name="length" type="time">
+            <column name="length" length="8" />
+        </property>
+        <property name="releaseDate" type="date">
+            <column name="releaseDate" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
